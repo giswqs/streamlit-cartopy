@@ -4,4 +4,7 @@ channels:
 dependencies:
   - cartopy
   - tropycal
-  - streamlit
+  - pip
+  - pip:
+    - numpy >=1.22
+    - streamlit
