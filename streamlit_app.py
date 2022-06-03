@@ -2,6 +2,7 @@ import streamlit as st
 import tropycal.tracks as tracks
 
 st.set_page_config(layout="wide")
+st.sidebar.title("Navigation")
 
 @st.cache
 def read_data(basin='north_atlantic',source='hurdat',include_btk=False):
@@ -16,6 +17,7 @@ def app():
     with row1_col1:
         empty = st.empty()
         empty.image("https://i.imgur.com/Ec7qsR0.png")
+        empty2 = st.empty()
 
     with row1_col2:
 
@@ -31,6 +33,16 @@ def app():
             ax = storm.plot()
             fig = ax.get_figure()
             empty.pyplot(fig) 
+
+            forecast = st.slider('Select a forecast number', min_value=1, max_value=25, value=5)
+            try:
+                ax2 = storm.plot_nhc_forecast(forecast=forecast)
+                fig2 = ax2.get_figure()
+                empty2.pyplot(fig2)
+
+            except:
+                st.write("No forecast available")
+            
         else:           
 
             name = st.text_input("Or enter a storm Name", "michael")
