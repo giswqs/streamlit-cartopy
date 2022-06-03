@@ -6,5 +6,4 @@ dependencies:
   - tropycal
   - pip
   - pip:
-    - numpy >=1.22
     - streamlit
