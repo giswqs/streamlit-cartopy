@@ -7,4 +7,4 @@ dependencies:
   - pip
   - pip:
     - streamlit
-    - numpy==1.22.4
+    - pandas
