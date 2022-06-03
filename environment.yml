@@ -5,6 +5,6 @@ dependencies:
   - cartopy
   - tropycal
   - streamlit
+  - pandas
   # - pip
   # - pip:
-  #   - pandas
