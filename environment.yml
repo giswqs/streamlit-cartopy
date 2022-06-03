@@ -4,7 +4,7 @@ channels:
 dependencies:
   - cartopy
   - tropycal
-  - pip
-  - pip:
-    - streamlit
-    - pandas
+  - streamlit
+  # - pip
+  # - pip:
+  #   - pandas
