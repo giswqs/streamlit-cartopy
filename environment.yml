@@ -5,7 +5,7 @@ dependencies:
   - python=3.9
   - cartopy
   - tropycal
-  - pip
-  - pip:
-      - streamlit
-      - pyarrow
+  - streamlit
+  - pyarrow
+  # - pip
+  # - pip:
