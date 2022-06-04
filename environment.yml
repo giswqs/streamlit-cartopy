@@ -2,10 +2,10 @@ name: geo
 channels:
   - conda-forge
 dependencies:
-  - cartopy
-  - tropycal
-  - pandas
-  - numpy
+  # - cartopy
+  # - tropycal
+  # - pandas
+  # - numpy
   - pip
-  - pip:
-      - streamlit
+  # - pip:
+  #     - streamlit
